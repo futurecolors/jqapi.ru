@@ -18,15 +18,20 @@ module.exports = function (grunt) {
         },
         concat: {
             js: {
-                src: ['cheatsheet/js/vendor/*.js'],
+                src: ['src/js/**/*.js'],
                 dest: 'build/scripts.js'
             },
             css: {
-                src: ['cheatsheet/css/*.css'],
+                src: ['src/css/reset.css', 'src/css/common.css', 'src/css/wrapper.css',
+                      'src/css/header.css', 'src/css/footer.css', 'src/css/jquery.css'],
                 dest: 'build/styles.css'
             }
         },
         cssmin: {
+            options: {
+                banner: '/*! <%= pkg.name %> <%= pkg.description %> <%= grunt.template.today("yyyy-mm-dd") %> */\n',
+                report: 'gzip'
+            },
             main: {
                 files: {
                     'build/styles.min.css': '<%= concat.css.dest %>'
@@ -46,8 +51,9 @@ module.exports = function (grunt) {
     });
 
     grunt.loadNpmTasks('assemble');
-    grunt.registerTask('default', ['assemble']);
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+
+    grunt.registerTask('default', ['assemble', 'concat', 'cssmin']);
 };

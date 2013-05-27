@@ -12,6 +12,10 @@ td {vertical-align:top;}
 /*
 Расположение блоков
 */
+.b-work__header {
+    padding-bottom: 20px;
+    font-size: 30px;
+}
 .cat {}
 .subcat {}
 .selectors h2,
