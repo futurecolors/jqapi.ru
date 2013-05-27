@@ -1,0 +1,67 @@
+<div class="b-work">
+    <a href="http://futurecolors.ru" class="b-logo" title="Future Colors">
+        <img src="{{STATIC_URL}}images/logos/fc_main_logo.png" alt="Future Colors" />
+    </a>
+    <div class="l-content">
+        <h1 class="b-work__header">
+            {{cheatsheet.title}}
+        </h1>
+
+        <div class="l-col l-col_selectors">
+            {{> cat-selectors }}
+        </div>
+        <div class="l-col l-col_top">
+            <div class="l-col l-col_core">
+                {{> cat-core }}
+            </div>
+            <div class="l-col l-col_ajax">
+                {{> cat-ajax }}
+            </div>
+        </div>
+        <div class="l-col l-col_4">
+            {{> cat-events }}
+            {{> cat-effects }}
+        </div>
+        <div class="l-col l-col_pair">
+            <div class="l-col l-col_2">
+                {{> cat-attributes }}
+            </div>
+            <div class="l-col l-col_3">
+                {{> cat-css }}
+            </div>
+        </div>
+        <div class="l-col l-col_pair">
+            <div class="l-col l-col_2">
+                {{> cat-traversing }}
+            </div>
+            <div class="l-col l-col_3">
+                {{> cat-manipulation }}
+            </div>
+        </div>
+
+        <div class="g-clear"></div>
+
+        <div class="l-col l-col_utilites">
+            <div class="l-col l-col_utilites_1">
+                {{> cat-event }}
+            </div>
+            <div class="l-col l-col_utilites_2">
+                {{> cat-deferred }}
+            </div>
+            <div class="l-col l-col_utilites_3">
+                {{> cat-callbacks }}
+            </div>
+            <div class="l-col l-col_utilites_4">
+                {{> cat-utilities }}
+            </div>
+        </div>
+
+        <div class="g-clear"></div>
+
+        <div class="copyright_link">
+            <a href="http://{{cheatsheet.url}}"><span>http://</span>{{cheatsheet.url}}</a>
+           <h3>ver. {{now "%d.%m.%Y"}}</h3>
+        </div>
+    </div>
+    {{> custom-footer }}
+</div>

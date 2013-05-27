@@ -1,0 +1,71 @@
+<div class="cat events">
+    <h2>Events</h2>
+    <div class="subcat">
+        <h3>Page Load</h3>
+        <div class="apiobj"><span class="type">$</span>.<a href="http://api.jquery.com/ready/">ready</a><span class="attributes">( fn()&nbsp;)</span><div class="description">Specify a function to execute when the DOM is fully loaded.</div></div>
+    </div>
+    <div class="subcat">
+        <h3>Event Handling</h3>
+        <div class="apiobj"><span class="type">$</span>.<a href="http://api.jquery.com/on/">on</a><span class="attributes">( events <span class="opt">[, selector] [, data]</span>, handler&nbsp;)</span><span class="p1_4">1.7+</span><div class="description">Attach an event handler function for one or more events to the selected elements.</div></div>
+        <div class="apiobj"><span class="type">$</span>.<a href="http://api.jquery.com/on/">on</a><span class="attributes">( events-map <span class="opt">[, selector] [, data]</span>&nbsp;)</span><span class="p1_4">1.7+</span><div class="description">Attach an event handler function for one or more events to the selected elements.</div></div>
+        <div class="apiobj"><span class="type">$</span>.<a href="http://api.jquery.com/off/">off</a><span class="attributes">( events <span class="opt">[, selector] [, handler]</span>&nbsp;)</span><span class="p1_4">1.7+</span><div class="description">Remove an event handler.</div></div>
+        <div class="apiobj"><span class="type">$</span>.<a href="http://api.jquery.com/off/">off</a><span class="attributes">( events-map <span class="opt">[, selector]</span>&nbsp;)</span><span class="p1_4">1.7+</span><div class="description">Remove an event handler.</div></div>
+
+        <div class="apiobj"><span class="type">$</span>.<a href="http://api.jquery.com/bind/">bind</a><span class="attributes">( type <span class="opt">[, data ]</span>, fn(eventObj)&nbsp;)</span><div class="description">Attach a handler to an event for the elements.</div></div>
+        <div class="apiobj"><span class="type">$</span>.<a href="http://api.jquery.com/bind/">bind</a><span class="attributes">( type <span class="opt">[, data]</span>, false&nbsp;)</span><div class="description">Attach a handler to an event for the elements.</div></div>
+        <div class="apiobj"><span class="type">$</span>.<a href="http://api.jquery.com/bind/">bind</a><span class="attributes">( array&nbsp;)</span><div class="description">Attach a handler to an event for the elements.</div></div>
+        <div class="apiobj"><span class="type">$</span>.<a href="http://api.jquery.com/unbind/">unbind</a><span class="attributes">( <span class="opt">[type]</span> <span class="opt">[, fn]</span>)</span><div class="description">Remove a previously-attached event handler from the elements.</div></div>
+        <div class="apiobj"><span class="type">$</span>.<a href="http://api.jquery.com/one/">one</a><span class="attributes">( type <span class="opt">[, data ]</span>, fn(eventObj)&nbsp;)</span><div class="description">Attach a handler to an event for the elements. The handler is executed at most once.</div></div>
+        <div class="apiobj"><span class="type">$</span>.<a href="http://api.jquery.com/trigger/">trigger</a><span class="attributes">( event <span class="opt">[, data]</span>)</span><div class="description">Execute all handlers and behaviors attached to the matched elements for the given event type.</div></div>
+        <div class="apiobj"><span class="type">obj</span>.<a href="http://api.jquery.com/triggerHandler/">triggerHandler</a><span class="attributes">( event <span class="opt">[, data]</span>)</span><div class="description">Execute all handlers attached to an element for an event.</div></div>
+        <div class="apiobj"><span class="type">$</span>.<a href="http://api.jquery.com/delegate/">delegate</a><span class="attributes">( selector, type, [data], handler)</span> <div class="description">Attach a handler to one or more events for all elements that match the selector, now or in the future, based on a specific set of root elements.</div></div>
+        <div class="apiobj">
+            <span class="type">$</span>.<a href="http://api.jquery.com/undelegate/">undelegate</a><span class="attributes">(
+            [selector, type, [handler]])&nbsp;<span class="attr-separator">|</span>
+            selector,&nbsp;events&nbsp;<span class="attr-separator">|</span>
+            namespace&nbsp;)</span>
+            <div class="description">Remove a handler from the event for all elements which match the current selector, now or in the future, based upon a specific set of root elements.</div>
+        </div>
+    </div>
+    <div class="subcat">
+        <h3>Live Events</h3>
+        <div class="apiobj"><span class="type">$</span>.<a href="http://api.jquery.com/live/">live</a><span class="attributes">( eventType [, data], fn()&nbsp;)</span><div class="description">Attach a handler to the event for all elements which match the current selector, now or in the future.</div></div>
+        <div class="apiobj"><span class="type">$</span>.<a href="http://api.jquery.com/die/#die1">die</a><span class="attributes">(&nbsp;)</span>, .<a href="http://api.jquery.com/die/#die2">die</a><span class="attributes">( <span class="opt">[eventType]</span> <span class="opt">[, fn() ]</span>)</span><div class="description">Remove an event handler previously attached using .live() from the elements.</div></div>
+    </div>
+    <div class="subcat">
+        <h3>Interaction Helpers</h3>
+        <div class="apiobj"><span class="type">$</span>.<a href="http://api.jquery.com/hover/">hover</a><span class="attributes">( fnIn(eventObj), fnOut(eventObj))</span><div class="description">Bind two handlers to the matched elements, to be executed when the mouse pointer enters and leaves the elements.</div></div>
+        <div class="apiobj"><span class="type">$</span>.<a href="http://api.jquery.com/toggle/">toggle</a><span class="attributes">( fn(eventObj), fn2(eventObj) <span class="opt">[, ...]</span>)</span><div class="description">Bind two or more handlers to the matched elements, to be executed on alternate clicks.</div></div>
+    </div>
+    <div class="subcat">
+        <h3>Event Helpers</h3>
+        <span class="event_signature"><i>function</i> ( [data,]&nbsp;[fn]&nbsp;)</span>
+        <div class="apiobj"><span class="f_left type">$</span>
+            <div class="event_helper">.<a href="http://api.jquery.com/blur/">blur</a>,</div>
+            <div class="event_helper">.<a href="http://api.jquery.com/mousedown/">mousedown</a>,</div>
+            <div class="event_helper">.<a href="http://api.jquery.com/change/">change</a>,</div>
+            <div class="event_helper">.<a href="http://api.jquery.com/mouseenter/">mouseenter</a>,</div>
+            <div class="event_helper">.<a href="http://api.jquery.com/click/">click</a>,</div>
+            <div class="event_helper">.<a href="http://api.jquery.com/mouseleave/">mouseleave</a>,</div>
+            <div class="event_helper">.<a href="http://api.jquery.com/dblclick/">dblclick</a>,</div>
+            <div class="event_helper">.<a href="http://api.jquery.com/mousemove/">mousemove</a>,</div>
+            <div class="event_helper">.<a href="http://api.jquery.com/error/">error</a>,</div>
+            <div class="event_helper">.<a href="http://api.jquery.com/mouseout/">mouseout</a>,</div>
+            <div class="event_helper">.<a href="http://api.jquery.com/focus/">focus</a>,</div>
+            <div class="event_helper">.<a href="http://api.jquery.com/mouseover/">mouseover</a>,</div>
+            <div class="event_helper">.<a href="http://api.jquery.com/focusin/">focusin</a>,</div>
+            <div class="event_helper">.<a href="http://api.jquery.com/mouseup/">mouseup</a>,</div>
+            <div class="event_helper">.<a href="http://api.jquery.com/focusout/">focusout</a>,</div>
+            <div class="event_helper">.<a href="http://api.jquery.com/resize/">resize</a>,</div>
+            <div class="event_helper">.<a href="http://api.jquery.com/keydown/">keydown</a>,</div>
+            <div class="event_helper">.<a href="http://api.jquery.com/scroll/">scroll</a>,</div>
+            <div class="event_helper">.<a href="http://api.jquery.com/keypress/">keypress</a>,</div>
+            <div class="event_helper">.<a href="http://api.jquery.com/select/">select</a>,</div>
+            <div class="event_helper">.<a href="http://api.jquery.com/keyup/">keyup</a>,</div>
+            <div class="event_helper">.<a href="http://api.jquery.com/submit/">submit</a>,</div>
+            <div class="event_helper">.<a href="http://api.jquery.com/load/">load</a><span class="attributes">( <span class="opt">[data,]</span> fn&nbsp;)</span>,</div>
+            <div class="event_helper">.<a href="http://api.jquery.com/unload/">unload</a><span class="attributes">( <span class="opt">[data,]</span> fn&nbsp;)</span></div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>

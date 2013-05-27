@@ -1,0 +1,67 @@
+<div class="cat ajax">
+    <h2>AJAX</h2>
+    <div class="l-col l-col_ajax-inner_1">
+        <div class="subcat">
+            <h3>Low-Level Interface</h3>
+            <div class="apiobj_wd"><span class="type small_type">jqXHR</span><a href="http://api.jquery.com/jQuery.ajax/">jQuery.ajax</a><span class="attributes">( options, [settings]&nbsp;)</span>
+                <ul class="ajax_option">
+                    <li><span class="type">map</span>accepts<div class="description">The content type sent in the request header that tells the server what kind of response it will accept in return.</div></li>
+                    <li><span class="type">bool</span>async = true<div class="description">By default, all requests are sent asynchronous.</div></li>
+                    <li><span class="type">fn</span>beforeSend<span class="attributes">( jqXHR, config)</span><div class="description">A pre-request callback function that can be used to modify the jqXHR object before it is sent.</div></li>
+                    <li><span class="type">bool</span>cache = true<div class="description">If set to false it will force the pages that you request to not be cached by the browser.</div></li>
+                    <li><span class="type">fn</span>complete<span class="attributes">( jqXHR, status)</span><div class="description">A function to be called when the request finishes (after success and error callbacks are executed).</div></li>
+                    <li><span class="type">map</span>contents<div class="description">A map of string/regular-expression pairs that determine how jQuery will parse the response, given its content type.</div></li>
+                    <li><span class="type">str</span>contentType<div class="description">When sending data to the server, use this content-type. Default is "application/x-www-form-urlencoded", which is fine for most cases.</div></li>
+                    <li><span class="type">obj</span>context<div class="description">This object will be made the context of all Ajax-related callbacks.</div></li>
+                    <li><span class="type">map</span>converters<div class="description">A map of dataType-to-dataType converters. Each converter's value is a function that returns the transformed value of the response.</div></li>
+                    <li><span class="type">bool</span>crossDomain<div class="description">If you wish to force a crossDomain request (such as JSONP) on the same domain, set the value of crossDomain to true.</div></li>
+                    <li><span class="type"><nobr class="small_type">obj, str</nobr></span>data<div class="description">Data to be sent to the server. It is converted to a query string, if not already a string.</div></li>
+                    <li><span class="type">fn</span>dataFilter<span class="attributes">( data, type&nbsp;)</span><div class="description">A function to be used to handle the raw responsed data of XMLHttpRequest.This is a pre-filtering function to sanitize the response.</div></li>
+                    <li><span class="type">bool</span>global = true<div class="description">Whether to trigger global Ajax event handlers for this request.</div></li>
+                    <li><span class="type">map</span>headers<div class="description">A map of additional header key/value pairs to send along with the request.</div></li>
+                    <li><span class="type">bool</span>ifModified = false<div class="description">Allow the request to be successful only if the response has changed since the last request.</div></li>
+                    <li><span class="type">str</span>jsonp<div class="description">Override the callback function name in a jsonp request.</div></li>
+                    <li><span class="type">fn</span>jsonpCallback<div class="description">Specify the callback function name for a jsonp request.</div></li>
+                    <li><span class="type">str</span>password<div class="description">A password to be used in response to an HTTP access authentication request.</div></li>
+                    <li><span class="type">bool</span>processData = true<div class="description">By default, data passed in to the data option as an object will be processed and transformed into a query string, fitting to the default content-type "application/x-www-form-urlencoded".</div></li>
+                    <li><span class="type">str</span>scriptCharset<div class="description">Forces the request to be interpreted as a certain charset.</div></li>
+                    <li><span class="type">map</span>statusCode<div class="description">A map of numeric HTTP codes and functions to be called when the response has the corresponding code.</div></li>
+                    <li><span class="type">num</span>timeout<div class="description">Set a local timeout (in milliseconds) for the request.</div></li>
+                    <li><span class="type">bool</span>traditional<div class="description">Set this to true if you wish to use the traditional style of param serialization.</div></li>
+                    <li><span class="type">str</span>type = 'GET'<div class="description">The type of request to make ("POST" or "GET"), default is "GET".</div></li>
+                    <li><span class="type">str</span>url = curr. page<div class="description">A string containing the URL to which the request is sent.</div></li>
+                    <li><span class="type">str</span>username<div class="description">A username to be used in response to an HTTP access authentication request.</div></li>
+                    <li><span class="type">fn</span>xhr<div class="description">Callback for creating the XMLHttpRequest object.</div></li>
+                    <li><span class="type">str</span>dataType &isin; {xml, json, script, html}<div class="description">The type of data that you're expecting back from the server.</div></li>
+                    <li><span class="type">fn</span>error<span class="attributes">( jqXHR, status, errorThrown&nbsp;)</span><div class="description">A function to be called if the request fails.</div></li>
+                    <li><span class="type">fn</span>success<span class="attributes">( data, status, jqXHR&nbsp;)</span><div class="description">A function to be called if the request succeeds.</div></li>                              </ul>
+            </div>
+            <div class="apiobj"><span class="type"></span><a href="http://api.jquery.com/jQuery.ajaxSetup/">jQuery.ajaxSetup</a><span class="attributes">( options&nbsp;)</span><div class="description">Set default values for future Ajax requests.</div></div>
+        </div>
+        <div class="subcat">
+            <h3>Miscellaneous</h3>
+            <div class="apiobj"><span class="type">str</span>.<a href="http://api.jquery.com/serialize/">serialize</a><span class="attributes">( &nbsp;)</span><div class="description">Encode a set of form elements as a string for submission.</div></div>
+            <div class="apiobj"><span class="type">[obj]</span>.<a href="http://api.jquery.com/serializeArray/">serializeArray</a><span class="attributes">( &nbsp;)</span><div class="description">Encode a set of form elements as an array of names and values.</div></div>
+            <div class="apiobj"><span class="type">str</span><a href="http://api.jquery.com/jQuery.param/">jQuery.param</a><span class="attributes">( obj, <span class="opt">[traditional]</span>&nbsp;)</span><div class="description">Create a serialized representation of an array or object, suitable for use in a URL query string or Ajax request.</div></div>
+        </div>
+    </div>
+    <div class="l-col l-col_ajax-inner_2">
+        <div class="subcat">
+            <h3>Shorthand Methods</h3>
+            <div class="apiobj"><span class="type">$</span>.<a href="http://api.jquery.com/load/">load</a><span class="attributes">( url <span class="opt">[, data]</span> <span class="opt">[, fn<span class="attributes">( responseText, status, XHR&nbsp;)</span>]</span>&nbsp;)</span><div class="description">Load data from the server and place the returned HTML into the matched element.</div></div>
+            <div class="apiobj"><span class="type small_type">jqXHR</span><a href="http://api.jquery.com/jQuery.get/">jQuery.get</a><span class="attributes">( url <span class="opt">[, data]</span> <span class="opt">[, fn<span class="attributes">( data, status, XHR&nbsp;)</span>]</span> <span class="opt">[, type]</span>&nbsp;)</span><div class="description">Load data from the server using a HTTP GET request.</div></div>
+            <div class="apiobj"><span class="type small_type">jqXHR</span><a href="http://api.jquery.com/jQuery.getJSON/">jQuery.getJSON</a><span class="attributes">( url <span class="opt">[, data]</span> <span class="opt">[, fn<span class="attributes">( data, status&nbsp;)</span>]</span>&nbsp;)</span><div class="description">Load JSON-encoded data from the server using a GET HTTP request.</div></div>
+            <div class="apiobj"><span class="type small_type">jqXHR</span><a href="http://api.jquery.com/jQuery.getScript/">jQuery.getScript</a><span class="attributes">( url <span class="opt">[, fn<span class="attributes">( data, status&nbsp;)</span>]</span>&nbsp;)</span><div class="description">Load a JavaScript file from the server using a GET HTTP request, then execute it.</div></div>
+            <div class="apiobj"><span class="type small_type">jqXHR</span><a href="http://api.jquery.com/jQuery.post/">jQuery.post</a><span class="attributes">( url <span class="opt">[, data]</span> <span class="opt">[, fn<span class="attributes">( data, status&nbsp;)</span>]</span> <span class="opt">[, type]</span>&nbsp;)</span><div class="description">Load data from the server using a HTTP POST request.</div></div>
+        </div>
+        <div class="subcat">
+            <h3>Global Ajax Event Handlers</h3>
+            <div class="apiobj"><span class="type">$</span>.<a href="http://api.jquery.com/ajaxComplete/">ajaxComplete</a><span class="attributes">( fn<span class="attributes">( event, XHR, options&nbsp;)</span>&nbsp;)</span><div class="description">Register a handler to be called when Ajax requests complete.</div></div>
+            <div class="apiobj"><span class="type">$</span>.<a href="http://api.jquery.com/ajaxError/">ajaxError</a><span class="attributes">( fn<span class="attributes">( event, XHR, options, thrownError&nbsp;)</span>&nbsp;)</span><div class="description">Register a handler to be called when Ajax requests complete with an error.</div></div>
+            <div class="apiobj"><span class="type">$</span>.<a href="http://api.jquery.com/ajaxSend/">ajaxSend</a><span class="attributes">( fn<span class="attributes">( event, XHR, options&nbsp;)</span>&nbsp;)</span><div class="description">Show a message before an Ajax request is sent.</div></div>
+            <div class="apiobj"><span class="type">$</span>.<a href="http://api.jquery.com/ajaxStart/">ajaxStart</a><span class="attributes">( fn<span class="attributes">( &nbsp;)</span>&nbsp;)</span><div class="description">Register a handler to be called when the first Ajax request begins. </div></div>
+            <div class="apiobj"><span class="type">$</span>.<a href="http://api.jquery.com/ajaxStop/">ajaxStop</a><span class="attributes">( fn<span class="attributes">( &nbsp;)</span>&nbsp;)</span><div class="description">Hide a loading message after all the Ajax requests have stopped.</div></div>
+            <div class="apiobj"><span class="type">$</span>.<a href="http://api.jquery.com/ajaxSuccess/">ajaxSuccess</a><span class="attributes">( fn<span class="attributes">(event, XHR, options)</span>&nbsp;)</span><div class="description">Show a message when an Ajax request completes successfully.</div></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+/**
+ * Обёртка страниц сайта
+ *
+ * @package     futurecolors
+ * @version     2.0
+ * @author      Голиков Артём <art@futurecolors.ru>
+ * @copyright   Future Colors
+ */
+
+
+/**
+ * @section     Обёртка документа
+ */
+
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+}
+.l-wrapper {
+    position: relative;
+    max-width: 1200px;
+    min-width: 900px;
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.ie6 .l-wrapper {
+    height: 100%;
+    width: expression(document.body.clientWidth < 899 ? "900px" : document.body.clientWidth > 1200 ? "1200px" : "auto");
+}
+.l-content {
+    padding: 40px 30px 100px 30px;
+}
+.m-jquery .l-content {
+    padding: 32px 0 45px 45px;
+    color: #333;
+}

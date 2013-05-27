@@ -1,0 +1,76 @@
+<div class="cat core">
+    <h2>Core</h2>
+    <div class="subcat">
+        <h3>jQuery function</h3>
+        <div class="apiobj">
+            <span class="type">$</span>.<a href="http://api.jquery.com/jQuery/">jQuery</a><span class="attributes">(
+                selector <span class="opt">[, context]</span>&nbsp;<span class="attr-separator">|</span>
+                element&nbsp;<span class="attr-separator">|</span>
+                elementArray&nbsp;<span class="attr-separator">|</span>
+                jQueryObject&nbsp;)</span>,
+            .<a href="http://api.jquery.com/jQuery/">jQuery</a><span class="attributes">(&nbsp;)</span>
+            <div class="description">Accepts a string containing a CSS selector which is then used to match a set of elements.</div>
+        </div>
+        <div class="apiobj">
+            <span class="type">$</span>.<a href="http://api.jquery.com/jQuery/.m-jquery2">jQuery</a><span class="attributes">(
+            html <span class="opt">[, owner]</span>&nbsp; |
+            html, props&nbsp;)</span>
+            <div class="description">Creates DOM elements on the fly from the provided string of raw HTML.</div>
+        </div>
+        <div class="apiobj"><span class="type">$</span>.<a href="http://api.jquery.com/jQuery/.m-jquery3">jQuery</a><span class="attributes">( fn&nbsp;)</span><div class="description">Binds a function to be executed when the DOM has finished loading.</div></div>
+        <div class="apiobj"><span class="type">def</span>.<a href="http://api.jquery.com/jQuery.when/">when</a><span class="attributes">(deferreds)</span><div class="description">Provides a way to execute callback functions based on one or more objects, usually Deferred objects that represent asynchronous events.</div></div>
+        <div class="apiobj"><span class="type">fn</span><a href="http://api.jquery.com/jQuery.sub/">jQuery.sub</a><span class="attributes">( )</span><div class="description">Creates a new copy of jQuery whose properties and methods can be modified without affecting the original jQuery object.</div></div>
+        <div class="apiobj"><span class="type">$</span>.<a href="http://api.jquery.com/jQuery.holdReady/">holdReady</a><span class="attributes">( hold )<div class="description">Indicates whether the ready hold is being requested or released</div></span></div>
+    </div>
+    <div class="subcat">
+        <h3>jQuery Object Accessors</h3>
+        <div class="apiobj"><span class="type">$</span><a href="http://api.jquery.com/each/">.each</a><span class="attributes">( fn(index, element)&nbsp;)</span><div class="description">Iterate over a jQuery object, executing a function for each matched element.</div></div>
+        <div class="apiobj_wd"><span class="type">num</span><span class="apiobj_d">.<a href="http://api.jquery.com/size/">size</a><span class="attributes">(&nbsp;)</span><div class="description">Return the number of DOM elements matched by the jQuery object.</div>, <span class="apiobj_d">.<a href="http://api.jquery.com/length/">length</a><div class="description">The number of elements in the jQuery object.</div></span></span></div>
+        <div class="apiobj"><span class="type">str</span>.<a href="http://api.jquery.com/selector/">selector</a><div class="description">A selector representing selector originally passed to jQuery().</div></div>
+        <div class="apiobj"><span class="type">el</span>.<a href="http://api.jquery.com/context/">context</a><div class="description">The DOM node context originally passed to jQuery(); if none was passed then context will likely be the document.</div></div>
+        <div class="apiobj"><span class="type">$</span>.<a href="http://api.jquery.com/eq/">eq</a><span class="attributes">( index&nbsp;)</span><div class="description">Reduce the set of matched elements to the one at the specified index.</div></div>
+        <div class="apiobj"><span class="type"></span><a href="http://api.jquery.com/jQuery.error/">jQuery.error</a><span class="attributes">( str&nbsp;)</span><div class="description">Takes a string and throws an exception containing it.</div></div>
+        <div class="apiobj"><span class="type">[el],el</span>.<a href="http://api.jquery.com/get/">get</a><span class="attributes">( [index]&nbsp;)</span><div class="description">Retrieve the DOM elements matched by the jQuery object.</div></div>
+        <div class="apiobj">
+            <span class="type">num</span>.<a href="http://api.jquery.com/index/">index</a><span class="attributes">(&nbsp;)</span>,
+            .<a href="http://api.jquery.com/index/">index</a><span class="attributes">(
+                selector&nbsp;<span class="attr-separator">|</span>
+                element&nbsp;)</span>
+            <div class="description">Search for a given element from among the matched elements.</div>
+        </div>
+        <div class="apiobj"><span class="type">$</span><a href="http://api.jquery.com/jQuery.pushStack/">jQuery.pushStack</a><span class="attributes">( elements, [name, args]&nbsp;)</span><div class="description">Add a collection of DOM elements onto the jQuery stack.</div></div>
+        <div class="apiobj"><span class="type">arr</span>.<a href="http://api.jquery.com/toArray/">toArray</a><span class="attributes">(&nbsp;)</span><div class="description">Retrieve all the DOM elements contained in the jQuery set, as an array.</div></div>
+    </div>
+    <div class="subcat">
+        <h3>Interoperability</h3>
+        <div class="apiobj"><span class="type">$</span><a href="http://api.jquery.com/jQuery.noConflic/">jQuery.noConflict</a><span class="attributes">( <span class="opt">[extreme]</span>&nbsp;)</span><div class="description">Relinquish jQuery's control of the $ variable.</div></div>
+    </div>
+</div>
+<div class="legend_holder">
+    <!--
+    <h2 class="legend">Legend</h2>
+    <div class="legend">
+        <h3>Conventional signs</h3>
+        <div class="legend_item">[obj] — array of objects</div>
+        <div class="legend_item"><span class="p1_4">1.5+</span> — new in 1.5</div>
+        <div class="legend_item"><span class="c1_4">1.5&lowast;</span> — changed in 1.5</div>
+    </div>
+    <div class="legend">
+        <h3>Data types</h3>
+        <div class="legend_item">* — anything</div>
+        <div class="legend_item">$ — jQuery object</div>
+        <div class="legend_item">arr — array</div>
+        <div class="legend_item">bool — boolean</div>
+        <div class="legend_item">el — DOM element</div>
+        <div class="legend_item">fn — function</div>
+        <div class="legend_item">int — integer</div>
+        <div class="legend_item">obj — object</div>
+        <div class="legend_item">str — string</div>
+        <div class="legend_item">map — string or array or object</div>
+        <div class="legend_item">jqXHR — extended XMLHttpRequest</div>
+    </div>-->
+    <div class="copyright_link">
+        <a href="http://futurecolors.ru/jquery/"><span>http://</span>futurecolors.ru/jquery/</a>
+        <h3>ver. </h3>
+    </div>
+</div>

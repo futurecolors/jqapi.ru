@@ -1,0 +1,83 @@
+/**
+ * Общие стили
+ *
+ * @package     futurecolors
+ * @version     2.0
+ * @author      Голиков Артём <art@futurecolors.ru>
+ * @copyright   Future Colors
+ */
+
+
+/**
+ * @section     Общие стили
+ */
+
+
+/**
+ * @subsection  Ссылки
+ */
+
+a {
+    color: #0090ff;
+}
+
+
+/**
+ * @subsection  Эмуляция тегов и поведений
+ */
+
+.g-clear {
+    clear: both;
+}
+.g-nobr {
+    white-space: nowrap;
+}
+/**
+ * Убираем рамочку при нажатии на кнопку
+ * @css-for     FF
+ * @link        http://forums.mozillazine.org/viewtopic.php?f=25&t=451213&st=0&sk=t&sd=a&start=0
+ */
+input[type="submit"]::-moz-focus-inner {
+    border: none;
+}
+/**
+ * Убираем мерцание у ссылок с фоновыми изображениями
+ * @css-for     IE6
+ * @link        http://ajaxian.com/archives/no-more-ie6-background-flicker
+ */
+.ie6 {
+  filter: expression(document.execCommand("BackgroundImageCache", false, true));
+}
+
+/**
+ * @subsection  Сокрытие элементов при включённом js
+ */
+
+.g-nojsshow {
+    display: none;
+}
+.no-js .g-nojsshow {
+    display: block;
+}
+.no-js .g-nojshide {
+    display: none;
+}
+.g-hide {
+    display: none;
+}
+
+
+/**
+ * @section     Кастомные шрифты
+ */
+
+@font-face {
+    font-family: 'SansusWebissimoRegular';
+    src: url('../fonts/sansus-webissimo-regular-webfont.eot');
+    src: url('../fonts/sansus-webissimo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('http://futurecolors.ru/_static/sansus-webissimo-regular-webfont.woff') format('woff'),
+    url('../fonts/sansus-webissimo-regular-webfont.ttf') format('truetype'),
+    url('../fonts/sansus-webissimo-regular-webfont.svg#SansusWebissimoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

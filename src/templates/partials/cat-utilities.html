@@ -1,0 +1,62 @@
+<div class="cat utilities">
+    <h2>Utilities</h2>
+    <div class="l-col l-col_utilites-inner_1">
+        <div class="subcat">
+            <h3>Browser and Feature Detection</h3>
+            <div class="apiobj"><span class="type">obj</span><a href="http://api.jquery.com/jQuery.support/">jQuery.support</a><div class="description">A collection of properties that represent the presence of different browser features or bugs.</div></div>
+            <div class="apiobj"><span class="type">obj</span><a href="http://api.jquery.com/jQuery.browser/">jQuery.browser</a><span class="d1_3">deprecated</span><div class="description">Contains flags for the useragent, read from navigator.userAgent.</div></div>
+            <div class="apiobj"><span class="type">str</span><a href="http://api.jquery.com/jQuery.browser/.m-jquery.browser.version2">jQuery.browser.version</a><span class="d1_3">deprecated</span><div class="description">The version number of the rendering engine for the user's browser.</div></div>
+            <div class="apiobj"><span class="type">bool</span><a href="http://api.jquery.com/jQuery.boxModel/">jQuery.boxModel</a><span class="d1_3">deprecated</span><div class="description">States if the current page, in the user's browser, is being rendered using the W3C CSS Box Model.</div></div>
+        </div>
+        <div class="subcat">
+            <h3>Basic operations</h3>
+            <div class="apiobj"><span class="type">obj</span><a href="http://api.jquery.com/jQuery.each/">jQuery.each</a><span class="attributes">( obj, fn<span class="attributes">( i, valueOfElement&nbsp;)</span>&nbsp;)</span><div class="description">Iterates through the array displaying each number as both a word and numeral.</div></div>
+            <div class="apiobj"><span class="type">obj</span><a href="http://api.jquery.com/jQuery.extend/">jQuery.extend</a><span class="attributes">( <span class="opt">[deep,]</span> target, obj1 <span class="opt">[, objN]</span>&nbsp;)</span><div class="description">Merge the contents of two or more objects together into the first object.</div></div>
+            <div class="apiobj"><span class="type">arr</span><a href="http://api.jquery.com/jQuery.grep/">jQuery.grep</a><span class="attributes">( arr, fn<span class="attributes">( el, i&nbsp;)</span> <span class="opt">[, invert]</span>&nbsp;)</span><div class="description">Finds the elements of an array which satisfy a filter function. The original array is not affected.</div></div>
+            <div class="apiobj"><span class="type">arr</span><a href="http://api.jquery.com/jQuery.makeArray/">jQuery.makeArray</a><span class="attributes">( obj&nbsp;)</span><div class="description">Convert an array-like object into a true JavaScript array.</div></div>
+            <div class="apiobj"><span class="type">arr</span><a href="http://api.jquery.com/jQuery.map/">jQuery.map</a><span class="attributes">( arrayOrObject, fn<span class="attributes">( el, i&nbsp;)</span>&nbsp;)</span><div class="description">Translate all items in an array or array-like object to another array of items.</div></div>
+            <div class="apiobj"><span class="type">num</span><a href="http://api.jquery.com/jQuery.inArray/">jQuery.inArray</a><span class="attributes">( val, arr&nbsp;)</span><div class="description">Search for a specified value within an array and return its index (or -1 if not found).</div></div>
+            <div class="apiobj"><span class="type">arr</span><a href="http://api.jquery.com/jQuery.merge/">jQuery.merge</a><span class="attributes">( first, second&nbsp;)</span><div class="description">Merge the contents of two arrays together into the first array. </div></div>
+            <div class="apiobj"><span class="type">fn</span><a href="http://api.jquery.com/jQuery.noop/">jQuery.noop</a><div class="description">An empty function.</div></div>
+            <div class="apiobj">
+                <span class="type">fn</span><a href="http://api.jquery.com/jQuery.proxy/">jQuery.proxy</a><span class="attributes">(
+                fn, scope&nbsp;<span class="attr-separator">|</span>
+                scope, name&nbsp;)</span>
+                <div class="description">Takes a function and returns a new one that will always have a particular context.</div>
+            </div>
+            <div class="apiobj"><span class="type">arr</span><a href="http://api.jquery.com/jQuery.unique/">jQuery.unique</a><span class="attributes">( arr&nbsp;)</span><div class="description">Sorts an array of DOM elements, in place, with the duplicates removed. Note that this only works on arrays of DOM elements, not strings or numbers.</div></div>
+            <div class="apiobj"><span class="type">str</span><a href="http://api.jquery.com/jQuery.trim/">jQuery.trim</a><span class="attributes">( str&nbsp;)</span><div class="description">Remove the whitespace from the beginning and end of a string.</div></div>
+            <div class="apiobj"><span class="type">obj</span><a href="http://api.jquery.com/jQuery.parseJSON/">jQuery.parseJSON</a><span class="attributes">( str&nbsp;)</span><div class="description">Takes a well-formed JSON string and returns the resulting JavaScript object.</div></div>
+        </div>
+    </div>
+    <div class="l-col l-col_utilites-inner_2">
+        <div class="subcat">
+            <h3>Data functions</h3>
+            <div class="apiobj"><span class="type">$</span>.<a href="http://api.jquery.com/clearQueue/">clearQueue</a><span class="attributes">( <span class="opt">[name]</span>&nbsp;)</span><div class="description">Remove from the queue all items that have not yet been run.</div></div>
+            <div class="apiobj"><span class="type">$</span>.<a href="http://api.jquery.com/dequeue/">dequeue</a><span class="attributes">( <span class="opt">[name]</span>&nbsp;)</span>, <a href="http://api.jquery.com/jQuery.dequeue/">jQuery.dequeue</a><span class="attributes">( <span class="opt">[name]</span>&nbsp;)</span><div class="description">Execute the next function on the queue for the matched elements.</div></div>
+            <div class="apiobj"><span class="type">obj</span><a href="http://api.jquery.com/jQuery.data/">jQuery.data</a><span class="attributes">( el, key&nbsp;)</span>, <a href="http://api.jquery.com/jQuery.data/">jQuery.data</a><span class="attributes">( &nbsp;)</span><div class="description">Store arbitrary data associated with the specified element.</div></div>
+            <div class="apiobj"><span class="type">obj</span>.<a href="http://api.jquery.com/data/">data</a><span class="attributes">( &nbsp;)</span>, .<a href="http://api.jquery.com/data/">data</a><span class="attributes">( key&nbsp;)</span><div class="description">Store arbitrary data associated with the specified element.</div></div>
+            <div class="apiobj">
+                <span class="type">$</span>.<a href="http://api.jquery.com/data/">data</a><span class="attributes">(
+                key, val&nbsp;<span class="attr-separator">|</span>
+                obj&nbsp;)</span>
+                <div class="description">Store arbitrary data associated with the specified element.</div>
+            </div>
+            <div class="apiobj"><span class="type">$</span>.<a href="http://api.jquery.com/removeData/">removeData</a><span class="attributes">( <span class="opt">[name]</span>&nbsp;<span class="attr-separator">|</span><span class="opt">[list]</span>)</span><span class="p1_4">1.7*</span><div class="description">Remove a previously-stored piece of data.</div></div>
+            <div class="apiobj"><span class="type">[fn]</span>.<a href="http://api.jquery.com/queue/">queue</a><span class="attributes">( <span class="opt">[name]</span>&nbsp;)</span> <a href="http://api.jquery.com/jQuery.queue/">jQuery.queue</a><span class="attributes">( <span class="opt">[name]</span>&nbsp;)</span><div class="description">Show the queue of functions to be executed on the matched elements.</div></div>
+            <div class="apiobj"><span class="type">$</span>.<a href="http://api.jquery.com/queue/">queue</a><span class="attributes">( <span class="opt">[name,]</span> fn<span class="attributes">( next&nbsp;)</span>&nbsp;)</span>, <a href="http://api.jquery.com/jQuery.queue/">jQuery.queue</a><span class="attributes">( <span class="opt">[name,]</span> fn<span class="attributes">( &nbsp;)</span>&nbsp;)</span><div class="description">Show the queue of functions to be executed on the matched elements.</div></div>
+            <div class="apiobj"><span class="type">$</span>.<a href="http://api.jquery.com/queue/">queue</a><span class="attributes">( <span class="opt">[name,]</span> queue&nbsp;)</span>, <a href="http://api.jquery.com/jQuery.queue/">jQuery.queue</a><span class="attributes">( <span class="opt">[name,]</span> queue&nbsp;)</span><div class="description">Show the queue of functions to be executed on the matched elements.</div></div>
+        </div>
+        <div class="subcat">
+            <h3>Test operations</h3>
+            <div class="apiobj"><span class="type">str</span><a href="http://api.jquery.com/jQuery.type/">jQuery.type</a><span class="attributes">( obj&nbsp;)</span><div class="description">Determine the internal JavaScript [[Class]] of an object.</div></div>
+            <div class="apiobj"><span class="type">bool</span><a href="http://api.jquery.com/jQuery.isArray/">jQuery.isArray</a><span class="attributes">( obj&nbsp;)</span><div class="description">Determine whether the argument is an array.</div></div>
+            <div class="apiobj"><span class="type">bool</span><a href="http://api.jquery.com/jQuery.isEmptyObject/">jQuery.isEmptyObject</a><span class="attributes">( obj&nbsp;)</span><div class="description">Check to see if an object is empty (contains no properties).</div></div>
+            <div class="apiobj"><span class="type">bool</span><a href="http://api.jquery.com/jQuery.isFunction/">jQuery.isFunction</a><span class="attributes">( obj&nbsp;)</span><div class="description">Determine if the argument passed is a Javascript function object.</div></div>
+            <div class="apiobj"><span class="type">bool</span><a href="http://api.jquery.com/jQuery.isPlainObject/">jQuery.isPlainObject</a><span class="attributes">( obj&nbsp;)</span><div class="description">Check to see if an object is a plain object (created using "{}" or "new Object").</div></div>
+            <div class="apiobj"><span class="type">bool</span><a href="http://api.jquery.com/jQuery.isWindow/">jQuery.isWindow</a><span class="attributes">( obj&nbsp;)</span><div class="description">Determine whether the argument is a window.</div></div>
+            <div class="apiobj"><span class="type">bool</span><a href="http://api.jquery.com/jQuery.isNumeric/">jQuery.isNumeric</a><span class="attributes">( val&nbsp;)</span><span class="p1_4">1.7+</span><div class="description">Determines whether its argument is a number.</div></div>
+        </div>
+    </div>
+</div>
+

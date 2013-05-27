@@ -1,0 +1,111 @@
+/**
+ * Подвал
+ *
+ * @package     futurecolors
+ * @version     2.0
+ * @author      Голиков Артём <art@futurecolors.ru>
+ * @copyright   Future Colors
+ */
+
+
+/**
+ * @section     Подвал
+ */
+
+.b-footer {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: -60px;
+    font-size: 14px;
+    color: #333;
+}
+.b-footer__contacts {
+    float: right;
+    padding: 5px 30px 0 0;
+    text-align: right;
+}
+.b-footer__mail,
+.b-footer__phone,
+.b-footer__address {
+    height: 17px;
+}
+.b-footer__copy {
+    padding-left: 20px;
+}
+.m-bankomator .b-footer .b-footer__mail,
+.m-bankomator .b-footer .b-footer__phone,
+.m-bankomator .b-footer .b-footer__copy,
+.m-bankomator .b-footer .b-footer__address {
+    background: white;
+}
+.m-bankomator .b-footer a {
+    color: #17ade0;
+}
+.m-narayone .b-footer {
+    margin-top: -100px;
+    width: 950px;
+    padding: 5px;
+    color: white;
+}
+.m-narayone .b-footer .b-footer__mail,
+.m-narayone .b-footer .b-footer__phone,
+.m-narayone .b-footer .b-footer__copy,
+.m-narayone .b-footer .b-footer__address {
+    position: relative;
+    height: 25px;
+    line-height: 25px;
+}
+.m-narayone .b-footer__overlay {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    width: 950px;
+    background: black;
+    opacity: 0.7;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+}
+.m-narayone .b-footer a {
+    color: #8fe500;
+}
+.m-gm .b-footer {
+    color:white;
+}
+.m-gm .b-footer a {
+    color:#ed4923;
+}
+.m-autokosmos .b-footer {
+    color:white;
+}
+.m-autokosmos .b-footer a {
+    color: #b1579b
+}
+.m-5blades .b-footer {
+    color: #30a0f0;
+}
+.m-fut .b-footer,
+.m-fut .b-footer a {
+    color: white;
+}
+.m-belonika .b-footer__copy {
+    padding-left: 45px;
+}
+.m-belonika .fb-like {
+    padding-left: 25px;
+}
+
+
+/**
+ * @section     Фейсбук
+ */
+
+.fb-like {
+    position: relative;
+    top: 12px;
+    left: 20px;
+}
+.fb-like .fb_iframe_widget iframe {
+    width: auto !important;
+}
