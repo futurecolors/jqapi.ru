@@ -12,8 +12,18 @@ td {vertical-align:top;}
 /*
 Расположение блоков
 */
+.b-work {
+    position: relative;
+    max-width: 1200px;
+    min-width: 900px;
+    min-height: 100%;
+}
+.m-jquery .b-work {
+    max-width: none;
+    padding-right: 20px;
+}
 .b-work__header {
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     font-size: 30px;
 }
 .cat {}

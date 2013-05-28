@@ -25,6 +25,8 @@
     "grunt-contrib-cssmin": "~0.6.1",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-uglify": "~0.2.1",
-    "assemble": "~0.3.78"
+    "assemble": "~0.3.78",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-connect": "~0.3.0"
   }
 }

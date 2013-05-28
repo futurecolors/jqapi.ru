@@ -16,6 +16,11 @@ module.exports = function (grunt) {
                 data: ['src/data/*.json', {'year': grunt.template.today("yyyy")}]
             }
         },
+        copy: {
+            main: {
+                files: [{expand: true, cwd: 'src/images/', src: ['**'], dest: 'build/'}]
+            }
+        },
         concat: {
             js: {
                 src: ['src/js/**/*.js'],
@@ -47,13 +52,25 @@ module.exports = function (grunt) {
                     'build/scripts.min.js': '<%= concat.js.dest %>'
                 }
             }
+        },
+        connect: {
+            test: {
+                options: {
+                    port: 8000,
+                    base: 'build',
+                    keepalive: true
+                }
+            }
         }
     });
 
     grunt.loadNpmTasks('assemble');
+    grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-connect');
 
-    grunt.registerTask('default', ['assemble', 'concat', 'cssmin']);
+    grunt.registerTask('default', ['assemble', 'copy', 'concat', 'cssmin', 'uglify']);
+    grunt.registerTask('serve', ['default', 'connect']);
 };
