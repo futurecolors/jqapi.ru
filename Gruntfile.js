@@ -63,6 +63,13 @@ module.exports = function (grunt) {
                     keepalive: true
                 }
             }
+        },
+        'gh-pages': {
+            options: {
+                base: 'build',
+                message: "Let's start cooking!"
+            },
+            src: ['*']
         }
     });
 
@@ -72,7 +79,9 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-gh-pages');
 
     grunt.registerTask('default', ['assemble', 'copy', 'concat', 'cssmin', 'uglify']);
     grunt.registerTask('serve', ['default', 'connect']);
+    grunt.registerTask('publish', ['default', 'grunt-gh-pages']);
 };
