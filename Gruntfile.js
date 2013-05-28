@@ -28,7 +28,9 @@ module.exports = function (grunt) {
             },
             css: {
                 src: ['src/css/reset.css', 'src/css/common.css', 'src/css/wrapper.css',
-                      'src/css/header.css', 'src/css/footer.css', 'src/css/jquery.css'],
+                      'src/css/header.css', 'src/css/footer.css', 'src/css/jquery.css',
+                      'src/css/social-likes.css'
+                ],
                 dest: 'build/styles.css'
             }
         },
