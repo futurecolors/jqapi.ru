@@ -10,9 +10,9 @@ module.exports = function (grunt) {
                 data: 'src/data/*.json'
             },
             pages: {
-                files: {
-                    'build/': ['src/templates/cheatsheet.html']
-                },
+                files: [
+                    {src: 'src/templates/cheatsheet.html', dest: 'build/index.html'}
+                ],
                 data: ['src/data/*.json', {'year': grunt.template.today("yyyy")}]
             }
         },
@@ -83,5 +83,5 @@ module.exports = function (grunt) {
 
     grunt.registerTask('default', ['assemble', 'copy', 'concat', 'cssmin', 'uglify']);
     grunt.registerTask('serve', ['default', 'connect']);
-    grunt.registerTask('publish', ['default', 'grunt-gh-pages']);
+    grunt.registerTask('publish', ['default', 'gh-pages']);
 };
