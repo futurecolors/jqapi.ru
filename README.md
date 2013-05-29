@@ -1,6 +1,7 @@
 # jQuery API Cheatsheet
 
 Enjoy sigle-page jQuery API Cheatseet by [Future Colors].
+
 This repo is powering http://jqapi.ru site.
 
 Contributions are welcome.
@@ -13,10 +14,10 @@ Contributions are welcome.
 
 ## Developing
 
-* git clone clone git@github.com:futurecolors/jqapi.ru.git
-* cd jqapi.ru
-* npm install
-* grunt
+* `git clone clone git@github.com:futurecolors/jqapi.ru.git`
+* `cd jqapi.ru`
+* `npm install`
+* `grunt`
 
 Now you have fresh build of cheatsheet in `build` folder.
 
