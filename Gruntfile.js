@@ -19,7 +19,8 @@ module.exports = function (grunt) {
         copy: {
             main: {
                 files: [{expand: true, cwd: 'src/images/', src: ['**'], dest: 'build/'},
-                        {src: 'CNAME', dest: 'build/CNAME'}
+                        {src: 'CNAME', dest: 'build/CNAME'},
+                        {src: 'README.md', dest: 'build/README.md'}
                 ]
             }
         },
