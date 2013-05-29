@@ -207,6 +207,7 @@ body {
 .b-logo {
     display: block;
     padding: 20px 0 0 0;
+    margin-right: 100px;
     outline: 0;
 }
 .ie6 .m-fa .b-logo {
@@ -646,7 +647,7 @@ div.legend h3 {
 }
 @media screen {
     .m-jquery .b-logo {
-        width:365px;
+        width:355px;
         height:69px;
         background-color: rgb(255, 94, 133);
         padding:0px 10px 0 0;
