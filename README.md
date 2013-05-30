@@ -12,7 +12,7 @@ Contributions are welcome.
 * easily printable
 * clean design with less noise
 
-![jQuery API Cheatsheet](https://raw.github.com/futurecolors/jqapi.ru/master/jquery_cheatsheet.png "screenshot")
+[![jQuery API Cheatsheet](https://raw.github.com/futurecolors/jqapi.ru/master/jquery_cheatsheet.png "screenshot")](http://jqapi.ru)
 
 ## Developing
 
