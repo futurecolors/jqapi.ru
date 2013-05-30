@@ -29,6 +29,7 @@
 .b-logo {
     display: block;
     padding: 20px 0 0 0;
+    margin-right: 100px;
     outline: 0;
 }
 .ie6 .m-fa .b-logo {
