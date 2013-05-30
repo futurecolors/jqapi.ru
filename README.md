@@ -12,6 +12,8 @@ Contributions are welcome.
 * easily printable
 * clean design with less noise
 
+![jQuery API Cheatsheet](https://raw.github.com/futurecolors/jqapi.ru/master/jquery_cheatsheet.png "screenshot")
+
 ## Developing
 
 * `git clone clone git@github.com:futurecolors/jqapi.ru.git`
