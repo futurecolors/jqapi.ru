@@ -16,7 +16,7 @@ Contributions are welcome.
 
 ## Developing
 
-* `git clone clone git@github.com:futurecolors/jqapi.ru.git`
+* `git clone git@github.com:futurecolors/jqapi.ru.git`
 * `cd jqapi.ru`
 * `npm install`
 * `grunt`
