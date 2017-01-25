@@ -76,7 +76,7 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.loadNpmTasks('assemble');
+    grunt.loadNpmTasks('grunt-assemble');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
