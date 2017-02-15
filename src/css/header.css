@@ -1,15 +1,14 @@
 /**
- * Шапка сайта
+ * Header
  *
  * @package     futurecolors
  * @version     2.0
- * @author      Голиков Артём <art@futurecolors.ru>
+ * @author      Golikov Artem <art@futurecolors.ru>
  * @copyright   Future Colors
  */
 
-
 /**
- * @section     Шапка сайта
+ * @section     Header
  */
 
 .b-head {
@@ -21,9 +20,8 @@
     line-height: 120px;
 }
 
-
 /**
- * @subsection  Логотип
+ * @subsection  Logo
  */
 
 .b-logo {
@@ -32,6 +30,7 @@
     margin-right: 100px;
     outline: 0;
 }
+
 .ie6 .m-fa .b-logo {
     padding: 0;
     position: relative;
@@ -41,6 +40,7 @@
     height: 69px;
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/works/fa/logo.png');
 }
+
 .m-narayone .b-logo,
 .m-stillion .b-logo,
 .m-tnkracing .b-logo,
@@ -52,6 +52,7 @@
     z-index: 3;
     padding: 0;
 }
+
 .m-stillion .b-logo,
 .m-tnkracing .b-logo,
 .m-carbon .b-logo,
@@ -59,9 +60,11 @@
     width: 365px;
     height: 69px;
 }
+
 .m-moscowdjango .b-logo {
     height: 20px;
 }
+
 .b-logo_main {
     position: relative;
     display: inline-block;
@@ -70,9 +73,11 @@
     margin-top: 21px;
     padding: 0;
 }
+
 .ie6 .b-logo_main {
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/fc_main_logo.png');
 }
+
 .b-logo__image {
     position: absolute;
     top: -1px;
@@ -81,29 +86,34 @@
     height: 69px;
     margin-bottom: 12px;
 }
+
 .ie6 .b-logo__image {
     padding-top: 35px;
 }
+
 .ie6 .b-logo_main .b-logo__image {
     display: none;
 }
+
 .ie67 .b-logo_main .b-logo__image {
     margin-top: -41px;
 }
+
 .ie6 .m-narayone .b-logo__image,
 .ie6 .m-autokosmos .b-logo__image {
     padding: 0;
 }
+
 .ie6 .m-fa .b-logo__image {
     display: none;
 }
+
 .m-moscowdjango .b-logo__image {
     top: 6px;
 }
 
-
 /**
- * @subsection  Меню
+ * @subsection  Menu
  */
 
 .b-menu {
@@ -111,11 +121,13 @@
     font-size: 18px;
     padding-right: 20px;
 }
+
 .b-menu__item {
-    padding-left:50px;
-    float:left;
+    padding-left: 50px;
+    float: left;
 }
+
 .b-menu__item-link {
-    color:#777;
-    font-style:italic;
+    color: #777;
+    font-style: italic;
 }

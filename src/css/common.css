@@ -1,74 +1,76 @@
 /**
- * Общие стили
+ * Common styles
  *
  * @package     futurecolors
  * @version     2.0
- * @author      Голиков Артём <art@futurecolors.ru>
+ * @author      Golikov Artem <art@futurecolors.ru>
  * @copyright   Future Colors
  */
 
-
 /**
- * @section     Общие стили
+ * @section     Common styles
  */
 
-
 /**
- * @subsection  Ссылки
+ * @subsection  Links
  */
 
 a {
     color: #0090ff;
 }
 
-
 /**
- * @subsection  Эмуляция тегов и поведений
+ * @subsection  Tags and behavior emulation
  */
 
 .g-clear {
     clear: both;
 }
+
 .g-nobr {
     white-space: nowrap;
 }
+
 /**
- * Убираем рамочку при нажатии на кнопку
+ * No border on button click
  * @css-for     FF
  * @link        http://forums.mozillazine.org/viewtopic.php?f=25&t=451213&st=0&sk=t&sd=a&start=0
  */
 input[type="submit"]::-moz-focus-inner {
     border: none;
 }
+
 /**
- * Убираем мерцание у ссылок с фоновыми изображениями
+ * No blinking for links with background images
  * @css-for     IE6
  * @link        http://ajaxian.com/archives/no-more-ie6-background-flicker
  */
 .ie6 {
-  filter: expression(document.execCommand("BackgroundImageCache", false, true));
+    filter: expression(document.execCommand("BackgroundImageCache", false, true));
 }
 
 /**
- * @subsection  Сокрытие элементов при включённом js
+ * @subsection  Hiding elements when JS is off
  */
 
 .g-nojsshow {
     display: none;
 }
+
 .no-js .g-nojsshow {
     display: block;
 }
+
 .no-js .g-nojshide {
     display: none;
 }
+
 .g-hide {
     display: none;
 }
 
-
 /**
- * @section     Кастомные шрифты
+ * @section     Custom fonts
  */
 
 @font-face {
