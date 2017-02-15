@@ -4,3 +4,4 @@
 * Ilya Baryshev (@coagulant)
 * Vitaly Sergeev
 * Arthur Budko (@arteg)
+* Alexander Malitsky (@amalitsky)
