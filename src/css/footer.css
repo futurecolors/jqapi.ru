@@ -1,15 +1,14 @@
 /**
- * Подвал
+ * Footer
  *
  * @package     futurecolors
  * @version     2.0
- * @author      Голиков Артём <art@futurecolors.ru>
+ * @author      Golikov Artem <art@futurecolors.ru>
  * @copyright   Future Colors
  */
 
-
 /**
- * @section     Подвал
+ * @section     Footer
  */
 
 .b-footer {
@@ -22,16 +21,19 @@
     font-size: 14px;
     color: #333;
 }
+
 .b-footer__contacts {
     float: right;
     padding: 5px 30px 0 0;
     text-align: right;
 }
+
 .b-footer__mail,
 .b-footer__phone,
 .b-footer__address {
     height: 17px;
 }
+
 .b-footer__copy {
     padding-left: 20px;
 }
@@ -46,6 +48,3 @@
     left: 20px;
     width: 500px;
 }
-/*.fb-like .fb_iframe_widget iframe {*/
-    /*width: auto !important;*/
-/*}*/

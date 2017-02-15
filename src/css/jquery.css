@@ -1,16 +1,36 @@
 /*
-Общий стиль текста
+Main text styles
 */
-a {color:#0090FF}
-a:hover {text-decoration:underline;}
-a:visited {color:#3c85bd}
-a:active {color:#a20}
-table {border-collapse: collapse;}
-td {vertical-align:top;}
-.f_left {float:left;}
+a {
+    color: #0090FF
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #3c85bd
+}
+
+a:active {
+    color: #a20
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    vertical-align: top;
+}
+
+.f_left {
+    float: left;
+}
 
 /*
-Расположение блоков
+Block locations
 */
 .b-work {
     position: relative;
@@ -18,104 +38,113 @@ td {vertical-align:top;}
     min-width: 900px;
     min-height: 100%;
 }
+
 .m-jquery .b-work {
     max-width: none;
     padding-right: 20px;
 }
+
 .b-work__header {
     padding-bottom: 30px;
     font-size: 30px;
 }
-.cat {}
-.subcat {}
-.selectors h2,
-.selectors h3 {}
-.selectors .apiobj {}
 
 /*
-Стили надписей и заголовков
+Labels and headers
 */
-h1 {}
-h2 {}
-.apiobj,
-.apiobj_wd {
-}
 span.type {
-    display:inline-block;
-    text-align:right;
-    vertical-align:top;
+    display: inline-block;
+    text-align: right;
+    vertical-align: top;
 }
+
 span.attributes {
-    /*position: absolute;
-    display: none;*/
-    color:#888;
-}/*
-.apiobj:hover .attributes {
-    display: inline;
-    background: white;
-}*/
-span.p1_4 {color:#a00;font-weight:bolder;}
-span.c1_4 {color:#b99;font-weight:bolder;}
-span.d1_3 {color:#99b;font-weight:bolder;}
+    color: #888;
+}
+
+span.p1_4 {
+    color: #a00;
+    font-weight: bolder;
+}
+
+span.c1_4 {
+    color: #b99;
+    font-weight: bolder;
+}
+
+span.d1_3 {
+    color: #99b;
+    font-weight: bolder;
+}
+
 .legend span.p1_4,
 .legend span.c1_4,
 .legend span.d1_3 {
-    padding:0;
+    padding: 0;
 }
+
 .description {
-    position:absolute;
-    left:0px;
-    top:0px;
-    width:300px;
-    z-index:5;
-    display:none;
-    padding:5px;
-    background:black;
-    color:white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 300px;
+    z-index: 5;
+    display: none;
+    padding: 5px;
+    background: black;
+    color: white;
     -moz-border-radius: 7px;
     -webkit-border-radius: 7px;
     border-radius: 7px;
     -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    background:rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.8);
 }
+
 .big_description {
-    width:500px;
+    width: 500px;
 }
 
 .description dt {
-    color:#cfc;
-    float:left;
-    padding-right:5px;
+    color: #cfc;
+    float: left;
+    padding-right: 5px;
 }
+
 .description dd {
-    /*display:inline;*/
-    font-size:11px;
+    font-size: 11px;
 }
+
 .event_helper {
-    width:45%;
-    float:left;
-    margin-right:3%;
+    width: 45%;
+    float: left;
+    margin-right: 3%;
 }
+
 /*
-Копирайт и легенда
+Legend and copyright
 */
 .copyright_link a {
-    display:none;
+    display: none;
 }
+
 div.legend {
 }
+
 h2.legend {
-    padding:0mm 0mm 2mm 0mm;
+    padding: 0 0 2mm 0;
 }
+
 div.legend h3 {
-    padding:0mm;
+    padding: 0;
 }
+
 .legend_item {
-    padding-top:0.8mm;
-    font-size:6pt;
+    padding-top: 0.8mm;
+    font-size: 6pt;
 }
+
 .attr-separator {
     font-size: 13px;
     font-weight: bolder;
@@ -124,346 +153,438 @@ div.legend h3 {
 
 @media print {
     /*
-    Общий стиль текста
+    Main text styles
     */
     * {
-        margin:0px;
-        padding:0px;
-        font-weight:notmal;
-        font-size:100%;
+        margin: 0;
+        padding: 0;
+        font-weight: normal;
+        font-size: 100%;
     }
+
     body {
         line-height: 1;
-        font-family:verdana;
-        color:black;
-        background:white;
+        font-family: Verdana;
+        color: black;
+        background: white;
     }
+
     span {
-        font-family:arial;
+        font-family: Arial;
     }
+
     html, body {
-        width:100%;
+        width: 100%;
     }
-    td.col_1 {width:20%;}
-    td.col_2 {width:16%;}
-    td.col_3 {width:18%;}
-    td.col_4 {width:27%;}
-    td.col_5 {width:18%;}
+
+    td.col_1 {
+        width: 20%;
+    }
+
+    td.col_2 {
+        width: 16%;
+    }
+
+    td.col_3 {
+        width: 18%;
+    }
+
+    td.col_4 {
+        width: 27%;
+    }
+
+    td.col_5 {
+        width: 18%;
+    }
+
     caption, th, td, td a {
         text-align: left;
         font-weight: normal;
     }
+
     .clear {
-        clear:both;
+        clear: both;
     }
-    table {page-break-inside: avoid;}
+
+    table {
+        page-break-inside: avoid;
+    }
+
     a,
     a:visited {
-        color:black;
-        font-weight:bold;
-        text-decoration:none;}
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
     /*
-    Расположение блоков
+    Blocks positioning
     */
     .cat {
-        padding:0mm 1mm 1.5mm 1mm;
+        padding: 0 1mm 1.5mm 1mm;
     }
+
     .subcat {
-        padding-bottom:0.8mm;
+        padding-bottom: 0.8mm;
     }
+
     .selectors .apiobj,
     .selectors .apiobj_wd {
-        padding-left:0mm;
+        padding-left: 0mm;
     }
+
     .selectors .subcat {
-        padding-bottom:2mm;
+        padding-bottom: 2mm;
     }
+
     .selectors .compact {
-        width:42%;
-        padding-right:4%;
-        float:left;
+        width: 42%;
+        padding-right: 4%;
+        float: left;
     }
+
     /*
-    Стили надписей и заголовков
+    Labels and headers
     */
     h1 {
-        font-size:12pt;
-        padding-left:7mm;
-        padding-bottom:2mm;
+        font-size: 12pt;
+        padding-left: 7mm;
+        padding-bottom: 2mm;
     }
+
     h2 {
-        font-family:arial;
-        font-size:8pt;
+        font-family: Arial;
+        font-size: 8pt;
     }
+
     h3 {
-        font-family:arial;
-        color:#aaa;
-        font-size:7pt;
+        font-family: Arial;
+        color: #aaa;
+        font-size: 7pt;
     }
+
     .apiobj,
     .apiobj_wd {
-        font-size:6pt;
-        padding:0.3mm 0mm 0mm 6mm;
+        font-size: 6pt;
+        padding: 0.3mm 0 0 6mm;
     }
+
     .apiobj span.type,
     .apiobj_wd span.type {
-        color:#999;
-        width:6mm;
-        padding-right:1mm;
-        margin-left:-7mm;
+        color: #999;
+        width: 6mm;
+        padding-right: 1mm;
+        margin-left: -7mm;
     }
+
     .event_helper {
-        padding-bottom:0.3mm;
+        padding-bottom: 0.3mm;
     }
+
     .event_property {
-        padding:0mm 0mm 0mm 7mm;
+        padding: 0 0 0 7mm;
     }
+
     .ajax_option {
-        padding-left:1.5mm;
-        margin-top:1mm;
-        border-left:1px solid #aaa;
+        padding-left: 1.5mm;
+        margin-top: 1mm;
+        border-left: 1px solid #aaa;
     }
+
     .ajax_option li {
-        display:inline-block;
-        //zoom:1;
-        //display:inline;
-        min-width:35%;
-        white-space:nowrap;
-        margin-left:7mm;
+        display: inline-block;
+        //zoom: 1;
+        //display: inline;
+        min-width: 35%;
+        white-space: nowrap;
+        margin-left: 7mm;
     }
+
     .small_type {
-        margin-left:-2mm;
+        margin-left: -2mm;
         line-height: 1.1;
     }
-    span.attributes {white-space:nowrap}
-    span.event_signature {font-size:6pt;  color:#999;}
-    span.p1_4 {padding-left:1mm;}
-    span.c1_4 {padding-left:1mm;}
-    span.d1_3 {padding-left:1mm;}
+
+    span.attributes {
+        white-space: nowrap
+    }
+
+    span.event_signature {
+        font-size: 6pt;
+        color: #999;
+    }
+
+    span.p1_4 {
+        padding-left: 1mm;
+    }
+
+    span.c1_4 {
+        padding-left: 1mm;
+    }
+
+    span.d1_3 {
+        padding-left: 1mm;
+    }
+
     /*
-    Копирайт и легенда
+    Legend and copyright
     */
     .copyright_link {
-        padding-top:2mm;
-        font-family:arial;
-        font-size:10pt;
+        padding-top: 2mm;
+        font-family: Arial;
+        font-size: 10pt;
     }
+
     .copyright_link a {
-        display:inline;
-        color:#333;
+        display: inline;
+        color: #333;
     }
+
     .copyright_link span {
-        color:#999;
+        color: #999;
     }
+
     div.legend_holder {
-        padding-top:1mm;
+        padding-top: 1mm;
     }
+
     div.legend {
-        padding-bottom:2mm;
+        padding-bottom: 2mm;
     }
+
     h2.legend {
-        padding:0mm 0mm 2mm 0mm;
+        padding: 0 0 2mm 0;
     }
+
     div.legend h3 {
-        padding:0mm;
+        padding: 0;
     }
+
     .legend_item {
-        padding-top:0.8mm;
-        font-size:6pt;
+        padding-top: 0.8mm;
+        font-size: 6pt;
     }
+
     /*
-    Выключение лишних блоков
+    Blocks to be hidden
     */
     .b-logo,
     .b-footer,
     h1 {
-        display:none;
+        display: none;
     }
+
     .b-subcolumns.b-print-pages {
         display: block;
     }
-    .b-print-pages>.b-c50l,
-    .b-print-pages>.b-c50r {
+
+    .b-print-pages > .b-c50l,
+    .b-print-pages > .b-c50r {
         display: block;
         width: 100%;
         float: none;
     }
-    .b-print-pages>.b-c50l {
+
+    .b-print-pages > .b-c50l {
         page-break-after: always;
     }
 
 }
+
 @media screen {
     .m-jquery .b-logo {
-        width:355px;
-        height:69px;
+        width: 355px;
+        height: 69px;
         background-color: rgb(255, 94, 133);
-        padding:0px 10px 0 0;
-        position:relative;
-        top:0;
-        left:20px;
-        margin-top:10px;
-        display:block;
-        float:right;
+        padding: 0 10px 0 0;
+        position: relative;
+        top: 0;
+        left: 20px;
+        margin-top: 10px;
+        display: block;
+        float: right;
     }
+
     .m-jquery_api_map {
-        line-height:16px;
-        margin-top:10px;
-        clear:both;
+        line-height: 16px;
+        margin-top: 10px;
+        clear: both;
     }
-    td.col_1 {width:21%;}
-    td.col_2 {width:18%;}
-    td.col_3 {width:18%;}
-    td.col_4 {width:27%;}
-    td.col_5 {width:15%;}
+
+    td.col_1 {
+        width: 21%;
+    }
+
+    td.col_2 {
+        width: 18%;
+    }
+
+    td.col_3 {
+        width: 18%;
+    }
+
+    td.col_4 {
+        width: 27%;
+    }
+
+    td.col_5 {
+        width: 15%;
+    }
+
     /*
-    Расположение блоков
+    Blocks positioning
     */
     .cat {
-        padding:0px 5px 25px 0;
+        padding: 0 5px 25px 0;
     }
+
     .selectors .apiobj,
     .selectors .apiobj_wd {
-        padding-left:0px;
+        padding-left: 0;
     }
+
     .selectors .subcat {
-        padding-bottom:10px;
+        padding-bottom: 10px;
     }
+
     /*
-    Стили надписей и заголовков
+    Labels and headers
     */
     h2 {
-        font-size:18px!important;
-        font-weight:bolder;
+        font-size: 18px !important;
+        font-weight: bolder;
     }
+
     h3 {
         padding-top: 5px;
-        color:#359;
-        font-size:16px;
+        color: #359;
+        font-size: 16px;
     }
+
     .apiobj {
-        font-size:13px;
-        padding:4px 0 0 27px;
+        font-size: 13px;
+        padding: 4px 0 0 27px;
     }
+
     .apiobj_wd {
-        font-size:13px;
+        font-size: 13px;
         padding: 4px 0 0 20px;
     }
+
     .apiobj_wd_utilites {
         padding: 4px 0 0 2px;
         line-height: 14px;
     }
+
     .apiobj span.type,
     .apiobj_wd span.type {
-        width:30px;
-        padding-right:3px;
-        margin-left:-33px;
-        color:#993;
+        width: 30px;
+        padding-right: 3px;
+        margin-left: -33px;
+        color: #993;
     }
+
     * html .ajax_option span.type {
-        position:relative;
-        left:-30px;
+        position: relative;
+        left: -30px;
     }
+
     .event_signature {
-        color:#888888;
-        font-size:12px;
-        white-space:normal;
+        color: #888888;
+        font-size: 12px;
+        white-space: normal;
     }
+
     .event_helper {
-        padding-bottom:4px;
+        padding-bottom: 4px;
     }
+
     .event_property {
-        padding:0px 0 0 40px;
+        padding: 0 0 0 40px;
     }
+
     .ajax_option {
-        padding-left:12px;
-        margin:3px 0;
-        border-left:1px solid #aaa;
+        padding-left: 12px;
+        margin: 3px 0;
+        border-left: 1px solid #aaa;
     }
+
     .ajax_option li {
-        display:inline-block;
-        //zoom:1;
-        //display:inline;
-        min-width:40%;
-        margin-left:9%;
-        //margin-left: 30px;
-        //width:70%;
+        display: inline-block;
+        //zoom: 1;
+        //display: inline;
+        min-width: 40%;
+        margin-left: 9%;
+        //margin-left: 30 px;
+        //width: 70 %;
         line-height: 14px;
     }
+
     .small_type {
-        margin-left:-5px;
-        font-size:11px;
+        margin-left: -5px;
+        font-size: 11px;
         line-height: 1.6;
     }
-    .event_property {}
+
     span.attributes {
-        color:#888;
-        font-size:12px;
-        white-space:normal;
+        color: #888;
+        font-size: 12px;
+        white-space: normal;
     }
-    span.p1_4 {padding-left:5px;}
-    span.c1_4 {padding-left:5px;}
-    span.d1_3 {padding-left:5px;}
+
+    span.p1_4 {
+        padding-left: 5px;
+    }
+
+    span.c1_4 {
+        padding-left: 5px;
+    }
+
+    span.d1_3 {
+        padding-left: 5px;
+    }
+
     span.attributes {
-        //white-space:nowrap;
+        //white-space: nowrap;
     }
+
     /*
-    Копирайт и легенда
+    Legend and copyright
     */
     .copyright_link {
         height: 100px;
     }
+
     div.legend_holder {
         display: none;
     }
+
     div.legend {
-        padding-bottom:10px;
+        padding-bottom: 10px;
     }
+
     h2.legend {
-        padding:0px;
+        padding: 0;
     }
+
     div.legend h3 {
-        padding:0mm;
+        padding: 0mm;
     }
+
     .legend_item {
-        padding-top:3px;
-        font-size:12px;
-    }
-    /*
-    Ссылка на загрузку
-    */
-    .pdf_big_icon {
-        display:inline-block;
-        margin-left:50px;
-        padding-left:50px;
-        height:48px;
-        line-height:48px;
-        background:url(../images/icons/pdf-big.png) 0 0 no-repeat;
-        font-size:20px;
-        font-style:italic;
-    }
-    .png_big_icon {
-        display:inline-block;
-        margin-left:50px;
-        padding-left:50px;
-        height:48px;
-        line-height:48px;
-        background:url(../images/icons/png.png) 0 0 no-repeat;
-        font-size:20px;
-        font-style:italic;
+        padding-top: 3px;
+        font-size: 12px;
     }
 }
 
-
-
 /**
- * @subsection  Стили для печати
+ * @subsection  Print styles
  *
- * Прописываем в FireBug рядом с m-jquery класс m-print, делаем снимок fireshot'ом, делаем из него png pdf версии
+ * Append `m-pring` to `m-jquery` class, make a screen shot through Fireshot and use it for png and pdf versions.
  */
 
 .m-print * {
-    color: black!important;
+    color: black !important;
 }
 
 .m-print a,
@@ -472,107 +593,131 @@ div.legend h3 {
     font-weight: bold;
     text-decoration: none;
 }
+
 .m-print .pdf_big_icon,
 .n-print .png_big_icon {
     display: none;
 }
+
 .m-print .b-work {
     max-width: 1400px;
 }
+
 .m-print h2,
 .m-print h3 {
     font-weight: bold;
 }
+
 .m-print .b-logo {
     margin-top: 0;
 }
+
 .m-print .b-work__header {
     padding-bottom: 40px;
     font-size: 42px;
 }
+
 .subcat {
-    padding:0 20px 10px 0;
+    padding: 0 20px 10px 0;
 }
+
 .m-print .b-print-pages,
 .m-print .b-print-page {
     display: block;
 }
 
-
 /**
- * @subsection  Макетные стили
+ * @subsection  Mock styles
  */
 
 .l-col {
     float: left;
 }
+
 .l-col_selectors {
     width: 15%;
 }
+
 .l-col_pair {
     width: 55%;
 }
+
 .l-col_top {
     display: inline-block;
     width: 85%;
 }
+
 .l-col_core {
     width: 30%;
 }
+
 .l-col_ajax {
     width: 70%;
 }
+
 .l-col_ajax-inner_1 {
     width: 60%;
 }
+
 .l-col_ajax-inner_2 {
     width: 40%;
 }
+
 .l-col_2 {
     width: 50%;
 }
+
 .l-col_3 {
     width: 50%;
 }
+
 .l-col_4 {
     width: 30%;
     float: right;
 }
+
 .l-col_utilites {
     float: none;
     clear: both;
 }
+
 .l-col_utilites_1 {
     width: 22%;
 }
+
 .l-col_utilites_2 {
     width: 19%;
 }
+
 .l-col_utilites_3 {
     width: 16%;
 }
+
 .l-col_utilites_4 {
     width: 43%;
 }
+
 .l-col_utilites-inner_1 {
     width: 55%;
 }
+
 .l-col_utilites-inner_2 {
     width: 45%;
 }
-
 
 /**
  * @subsection  ???
  */
 
-.equalize, .equalize .b-subcolumns { table-layout:fixed; }
+.equalize, .equalize .b-subcolumns {
+    table-layout: fixed;
+}
 
 .equalize > div {
-    display:table-cell;
-    float:none;
-    margin:0;
-    overflow:hidden;
-    vertical-align:top;
+    display: table-cell;
+    float: none;
+    margin: 0;
+    overflow: hidden;
+    vertical-align: top;
 }
 
