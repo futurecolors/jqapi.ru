@@ -1,8 +1,8 @@
-# jQuery API Cheatsheet
+# jQuery API Cheat Sheet
 
-Enjoy sigle-page jQuery API Cheatseet by [Future Colors].
+Enjoy single-page jQuery API Cheat Sheet by [Future Colors] and community.
 
-This repo is powering http://jqapi.ru site.
+This repo used to power jqapi.ru website, now served through https://futurecolors.github.io/jqapi.ru/
 
 Contributions are welcome.
 
@@ -12,7 +12,7 @@ Contributions are welcome.
 * easily printable
 * clean design with less noise
 
-[![jQuery API Cheatsheet](https://raw.github.com/futurecolors/jqapi.ru/master/jquery_cheatsheet.png "screenshot")](http://jqapi.ru)
+[![jQuery API Cheatsheet](https://raw.github.com/futurecolors/jqapi.ru/master/jquery_cheatsheet.png "screenshot")](https://futurecolors.github.io/jqapi.ru/)
 
 ## Developing
 
@@ -21,7 +21,7 @@ Contributions are welcome.
 * `npm install`
 * `grunt`
 
-Now you have fresh build of cheatsheet in `build` folder.
+Now you have fresh build of cheat sheet in `build` folder.
 
 ### Tasks
 
@@ -29,6 +29,6 @@ Now you have fresh build of cheatsheet in `build` folder.
 Same as grunt, but also launches local server to display html.
 
     grunt publish
-Update jqapi.ru with latest build.
+Update https://futurecolors.github.io/jqapi.ru/ with latest build.
 
 [Future Colors]: http://futurecolors.ru
